@@ -1,0 +1,28 @@
+{
+  "name": "thira-fashion-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx serve out",
+    "lint": "eslint",
+    "postinstall": "node scripts/copy-mediapipe.mjs",
+    "predev": "node scripts/copy-mediapipe.mjs",
+    "prebuild": "node scripts/copy-mediapipe.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "1.2.0",
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.3",
+    "typescript": "^5"
+  }
+}
