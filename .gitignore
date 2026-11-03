@@ -48,3 +48,4 @@ __pycache__/
 .pytest_cache/
 .venv/
 backend/.env
+!.env.example
