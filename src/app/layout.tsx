@@ -34,7 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               products and prices are samples.
             </p>
             <p className="muted small">
-              The fitting room runs in the browser with Google MediaPipe body tracking. No app install, and no images leave the device.
+              Live colour runs in your browser with Google MediaPipe, so camera video never leaves your device. AI try-on sends one photo to the try-on service to create your image.
             </p>
           </footer>
           <CartDrawer />

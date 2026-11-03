@@ -42,3 +42,9 @@ next-env.d.ts
 
 # copied from node_modules by scripts/copy-mediapipe.mjs
 /public/mediapipe/
+
+# python
+__pycache__/
+.pytest_cache/
+.venv/
+backend/.env

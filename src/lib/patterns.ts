@@ -41,17 +41,3 @@ export function patternTile(pattern: Pattern, hex: string, accent: string, size 
   }
   return c;
 }
-
-export function shade(hex: string, amount: number) {
-  const n = parseInt(hex.slice(1), 16);
-  const f = (v: number) => Math.max(0, Math.min(255, Math.round(v + 255 * amount)));
-  const r = f((n >> 16) & 255);
-  const g = f((n >> 8) & 255);
-  const b = f(n & 255);
-  return `#${((1 << 24) | (r << 16) | (g << 8) | b).toString(16).slice(1)}`;
-}
-
-export function luminance(hex: string) {
-  const n = parseInt(hex.slice(1), 16);
-  return (0.299 * ((n >> 16) & 255) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255;
-}

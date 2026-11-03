@@ -32,6 +32,11 @@ export interface Product {
   description: string;
   colours: Colourway[];
   sizes: string[];
+  /**
+   * Optional real product photos (flat-lay or on a model), one per colour, used by the AI
+   * try-on. Without them the generated flat-lay artwork is sent instead.
+   */
+  photos?: string[];
 }
 
 export const BRAND = "Thira";

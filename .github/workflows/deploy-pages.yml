@@ -27,6 +27,8 @@ jobs:
       - run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+          # URL of the AI try-on backend (backend/). Set it under Settings > Secrets and variables > Actions > Variables.
+          NEXT_PUBLIC_TRYON_API_URL: ${{ vars.TRYON_API_URL }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out

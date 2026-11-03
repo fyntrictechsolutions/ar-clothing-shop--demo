@@ -14,8 +14,8 @@ export default function Home() {
             Try it on. <em>Right here.</em>
           </h1>
           <p className="hero__lede">
-            Stand in front of your camera and see tees, shirts, kurtas, hoodies and jackets on yourself, live. Switch
-            colours in a tap, then pick your size.
+            See every colour on the top you&apos;re wearing, live through your camera. Then let our AI show you in the
+            actual piece, with a realistic fit, from a single photo.
           </p>
           <div className="hero__actions">
             <HeroTryOnButton productId={tee.id} />
@@ -44,12 +44,12 @@ export default function Home() {
             <span>Tap “Try on” on any product.</span>
           </li>
           <li>
-            <strong>Step back from the camera</strong>
-            <span>Head to waist in frame, or use a photo.</span>
+            <strong>Swap colours live</strong>
+            <span>Your own top changes colour and print as you move.</span>
           </li>
           <li>
-            <strong>Swap colours live</strong>
-            <span>Compare before and after, then choose your size.</span>
+            <strong>See the real fit with AI</strong>
+            <span>One photo, and you see yourself wearing the piece.</span>
           </li>
         </ol>
       </section>
